@@ -1,0 +1,737 @@
+React Main Project
+******************
+1) Middlewares
+
+    Redux
+
+    Saga
+
+    Thunk
+
+    Redux ToolKit
+
+
+2) hooks
+
+    15 hooks
+
+    useState()
+
+    useEffect()
+
+    useContext()
+
+    useRef()
+
+    useReducer()
+
+    ----
+    ----
+    ----
+
+3) Unit Test Cases
+
+4) Debugging
+
+5) WebPack
+
+
+Redux
+*****
+    maintain the state
+
+    => React Applications are component based Applications.
+
+    => we can create more than one component.
+
+    => as a react developer, we can share the data between components.
+
+    => sharing the data between components are difficult if Application is large.
+
+
+Basic Example on Redux
+**********************
+
+1) create directory
+
+Ex.
+      ReduxEx
+
+
+2) switch to ReduxEx
+
+    > cd ReduxEx
+
+
+3) download redux library
+
+     > npm install redux
+
+         (or)
+
+    > yarn add redux
+
+
+4) create the redux application
+
+    > redux.js
+
+
+-------------------------------------------------------------------
+
+1) create the directory
+
+    Ex.
+            ReduxEx2
+
+2) switch to ReduxEx2
+
+    > cd ReduxEx2
+
+
+3) download the redux library
+
+    > yarn add redux
+
+
+4) create the redux application
+
+    Ex.
+         age.js
+
+
+
+React with Redux  (JSX)
+***********************
+
+1) Functional Approach
+
+2) Class Level Approach
+
+
+
+REACT INTRGRATION WITH REDUX
+****************************
+
+1) create the react application
+
+    > npx create-react-app reduxex3
+
+
+2) switch to project
+
+    > cd reduxex3
+
+
+3) download the libraries
+
+    => redux
+
+    => react-redux
+
+    > yarn add redux react-redux
+
+
+4) create the reducer
+
+*****************************
+reduxex3
+       src
+         reducer.js
+****************************
+
+5) deploy reducer to store and make store available to App Component
+
+    index.js
+
+
+6) perform the dispatch & subscribe operation in App Component
+
+
+
+reduxex4
+********
+1) download libraries
+
+    > yarn add redux react-redux
+
+2) create the reducer
+
+    ***********************
+    reduxex4
+           src
+             reducer
+               reducer.js
+    ***********************
+
+3) deploy reducer to store, and make store availability to App Component
+
+    index.js
+
+
+4) perform dispatch & subscribe operation
+
+        App.js
+
+
+
+
+***********************************************
+THUNK INTRGRATION
+***********************************************
+
+    - thunk is the middleware in redux library.
+
+    - thunk middleware used to moniter the actions.
+
+
+
+Step 1.
+    create the react application
+
+        > npx create-react-app thunk-ex
+
+
+Step 2.
+    switch to thunk-ex
+
+        > cd thunk-ex
+
+
+Step 3.
+    download the redux
+
+       > redux
+
+       > react-redux
+
+       > redux-thunk
+
+    > yarn add redux react-redux redux-thunk
+
+
+
+Step 4.
+    create the actions
+
+    *********************************
+    thunk-ex
+          src
+            actions   
+               bank.actions.js
+    ********************************
+
+
+
+Step 5.
+    create the reducer
+
+    ******************************************
+    thunk-ex
+           src
+             reducer
+                bank.reducer.js
+    *****************************************
+
+
+Step 6.
+    create the store, deploy the reducer  and apply the thunk middleware
+
+    index.js
+
+
+Step 7.
+    perform dispatch and subscription
+
+    App.js
+
+
+Saga Middleware
+***************
+saga middleware used to manipulate the actions.
+
+we will download saga middleware with yarn tool.
+
+> yarn add redux-saga
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        ***** ReduxEx5 ***** 
+
+
+
+=> AWS Server               (cloud)
+
+=> MongoDB Atlas            (NoSQL DataBase & Cloud)
+
+=> Node Server              (Rest Services)
+
+=> ReactJS                  (Frontend)
+
+    State Management
+
+        Redux
+
+        Thunk
+
+        Saga
+
+
+AWS Server
+**********
+    => s3 bucket
+
+
+    Cloud Images
+    ************
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p1.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p2.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p3.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p4.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p5.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p6.jpg
+
+
+
+MongoDB DataBase
+****************
+    => MongoDB DataBase is "NoSQL" DataBase.
+
+    => MongoDB DataBase Supports "JSON".
+
+    => MongoDB DataBase running on "27017"
+
+    => MongoDB DataBase follows "mongodb" protocol.
+
+    => MongoDB DataBase provides cloud environment with the help of "MongoDB Atlas"
+
+
+                    SQL                             NoSQL
+
+1) Oracle, MySQL , SQLServer                MongoDB, CassandraDB, RabbitMQ
+
+2) tables                                   collections
+
+3) DataBases                                DataBases
+
+4) primary key                              _id
+
+5) record                                   document
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DataBase Name : mern
+
+collection Name : products
+
+password : admin
+
+connection url : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/mern?retryWrites=true&w=majority
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Node
+****
+    => NodeJS is the Server Side Technology.
+
+    => we will build NodeJS applications with the help of "JavaScript" / "TypeScript".
+
+    => NodeJS used to develop the "servers".
+
+    => NodeJS supports the "modules".
+
+
+
+=> create the folder
+
+    Ex.
+        server
+
+
+=> switch to server folder
+
+    > cd server
+
+=> download the modules
+
+    > yarn add express mongodb cors
+
+=> develop the rest api
+
+    > server.js
+
+=> start the node server
+
+        > node server
+
+=> test the rest api by using Postman
+
+    > http://localhost:8080/products
+
+
+                        Intrgration of Backend to the Frontend
+                                        (NodeJS)        (React)
+                                    MERN Stack Development
+                        ****************************************
+
+=> create the react application
+
+        > npx create-react-app mern-app
+
+=> switch to react application
+
+        > cd mern-app
+
+
+=> download modules
+
+        > axios
+
+        > redux
+
+        > react-redux
+
+        > redux-thunk
+
+    > yarn add axios redux react-redux redux-thunk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
