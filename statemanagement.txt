@@ -284,6 +284,98 @@ project3
         App.js
 
 
+                                            ***** CRUD OPERATIONS *****
+
+1) MySQL
+
+2) Node Server
+
+3) ReactJS with Redux, Thunk
+
+MySQL
+*****
+
+Password : admin
+
+DataBase Name : redux
+
+Table Name : products
+
+                p_id ,   p_name , p_cost
+
+
+
+
+Node Server
+***********
+
+> yarn add express mysql cors
+
+Ex.
+    server.js
+
+    1) http://localhost:8080/fetch (GET)
+
+    2) http://localhost:8080/insert   (POST)
+                body
+                    {
+                        p_id,
+                        p_name,
+                        p_cost
+                    }
+
+    3) http://localhost:8080/update   (PUT)
+                body{
+                    p_id,
+                    p_cost
+                }
+
+    4) http://localhost:8080/delete   (DELETE)
+                body{
+                    p_id
+                }
+
+Integration of CRUD Operations to React application
+***************************************************
+
+> npx create-react-app project4
+
+> cd project4
+
+> yarn add react-router-dom redux react-redux redux-thunk axios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
