@@ -345,6 +345,35 @@ Integration of CRUD Operations to React application
 > yarn add react-router-dom redux react-redux redux-thunk axios
 
 
+    - react-router-dom module used to implement the single page applications
+
+    - redux used to implement the state management
+
+    - react-redux used to Integrate the state management to react application
+
+    - redux-thunk used to moniter the actions
+
+    - axios used to make the asynchrnous calls.
+
+
+***********************************************************
+project4
+      src
+        types 
+           ProductTypes.js
+
+
+        actions
+          ProductActions.js
+
+
+        reducer
+            ProductReducer.js
+
+
+        index.js
+************************************************************
+
 
 
 
