@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
-import { createStore,applyMiddleware } from "redux";
+import { createStore,applyMiddleware, combineReducers } from "redux";
 import ProductReducer from './reducer/ProductReducer';
 import thunk from "redux-thunk";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-const store = createStore(ProductReducer,applyMiddleware(thunk));
+import { AddProductReducer } from './reducer/AddProductReducer';
+
+const allReducers = combineReducers({"fetch":ProductReducer,
+                 "insert":AddProductReducer});
+
+
+const store = createStore(allReducers,applyMiddleware(thunk));
 
 
 ReactDOM.render(

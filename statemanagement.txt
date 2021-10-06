@@ -376,6 +376,51 @@ project4
 
 
 
+Insert Operation
+++++++++++++++++
+
+********************************************************************
+project4
+       src
+         types
+           AddProduct.js
+         actions    
+            AddProductActions.js
+         reducer
+            AddProductReducer.js
+         components
+            AddProduct.js
+         index.js
+*********************************************************************
+
+
+Delete Operation
+****************
+project4
+       src
+         types
+           DeleteProductTypes.js
+          actions
+             DeleteProductActions.js
+          reducer
+             DeleteProductReducer.js
+         component
+             Products.js
+         index.js
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
