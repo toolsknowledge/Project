@@ -25,6 +25,7 @@ function AddProduct(){
 
     return(
         <React.Fragment>
+            <h1>Add Product</h1>
             <label>P_ID</label>
             <input type="number" ref={p_id}></input>
 

@@ -3,11 +3,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../actions/ProductsActions";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import AddProduct from "../components/AddProduct";
+import { deleteProduct } from "../actions/DeleteProductActions";
+import EditProduct from "./EditProduct";
 
 function Products(){
     const result = useSelector(state=>state);
     const { loading,products,error } = result.fetch;
-    console.log(loading,products,error );
+
+    console.log( result.remove);
+
+   
     const dispatch = useDispatch();
 
     useEffect(()=>{
@@ -19,7 +24,7 @@ function Products(){
     }
 
     const deleteRecord = (id)=>{
-        console.log(id);
+        dispatch(deleteProduct(id))
     }
 
 
@@ -52,6 +57,7 @@ function Products(){
                     </article>
                     <article className="col-md-6">
                         <Route path="/addProduct" component={AddProduct} exact={true} strict></Route>               
+                        <Route path="/editProduct" component={EditProduct} exact={true} strict></Route>
                     </article>
                 </article>
             </Router>
