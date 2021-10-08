@@ -49,7 +49,11 @@ function Products(){
                                     <td>{product.p_id}</td>
                                     <td>{product.p_name}</td>
                                     <td>{product.p_cost}</td>
-                                    <td><button className="btn btn-warning text-primary" onClick={()=>editRecord(product.p_id)}>EDIT</button></td>
+                                    {/* <td><button className="btn btn-warning text-primary" onClick={()=>editRecord(product.p_id)}>EDIT</button></td> */}
+                                    <td><NavLink to="/editProduct" exact={true} strict>
+                                            <span className="btn btn-success">Edit</span>
+                                        </NavLink>
+                                    </td>
                                     <td><button className="btn btn-danger text-danger" onClick={()=>deleteRecord(product.p_id)}>DELETE</button></td>
                                 </tr>
                             ))}

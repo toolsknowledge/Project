@@ -10,10 +10,12 @@ import thunk from "redux-thunk";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { AddProductReducer } from './reducer/AddProductReducer';
 import { deleteproductReducer } from './reducer/DeleteProductReducer';
+import { UpdateProductReducer } from "./reducer/UpdateProductReducer";
 
 const allReducers = combineReducers({"fetch":ProductReducer,
                  "insert":AddProductReducer,
-                 "remove":deleteproductReducer});
+                 "remove":deleteproductReducer,
+                  "update":UpdateProductReducer});
 
 
 const store = createStore(allReducers,applyMiddleware(thunk));
